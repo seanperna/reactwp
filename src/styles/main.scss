@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+$primary-color: #c1e6f1;
+$secondary-color: #f4f4f4;
+$text-color: #030303;
+$border-color-form:#d9dde3;
+$search-color-form:#bfc3c9;
+$search-btn-color-bg:#030303;
+$search-btn-color-text:#fdfdfd;
+$badge-header-color:#fec21d;
+$btn-text-weight-bold: 600;
+$border-radius-form: 6px;
+$padding-input: 20px;
+$padding-input-y: 12px;
+
+*, *::after, *::before{
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin:0
+}
+
+#root{
+  width:100%
+}
+
+// Heading
+
+.logo{
+  max-width: 170px;
+  object-fit: contain;
+  height: auto;
+  margin-top: 6px;
+}
+
+
+.header-wrapper{
+  padding: 1.25rem 0;
+  .search-box{
+    border: 1px solid $border-color-form;
+    border-radius: $border-radius-form;
+    position: relative;
+    input{
+       padding: $padding-input-y 0;
+    }
+    button{
+      position:absolute;
+      padding: 0 $padding-input;
+      right: 0;
+      top: 0;
+      bottom:0;
+      background-color: $search-btn-color-bg;
+      color: $search-btn-color-text;
+      font-weight: $btn-text-weight-bold;
+      border-radius: 0 $border-radius-form $border-radius-form 0;
+      &:hover{
+      opacity: .8;
+      }
+    }
+  }
+  .header-account-icon{
+    div & {
+      position:relative;
+      min-width: 95px;
+    }
+    span{
+      &:nth-child(2){
+        color:#afafaf !important;
+        bottom:25px;
+        position: absolute;
+        font-size: small;
+        width: max-content;
+      }
+      &:nth-child(3){
+        bottom:5px;
+        position: absolute;
+      }
+    }
+  }
+  .header-fav-icon{
+    span{
+      &:nth-child(2){
+        background-color:$badge-header-color;
+        color: $text-color;
+      }
+    }
+  }
+  .header-cart-icon{
+    div & {
+      position:relative;
+      min-width: 95px;
+    }
+    span:nth-child(2){
+      background-color:$badge-header-color;
+      color: $text-color;
+    }
+    div {
+      &:nth-child(2){
+        right:0;
+        color:#afafaf !important;
+        bottom:25px;
+        position: absolute;
+        font-size: small;
+        width: max-content;
+      }
+      &:nth-child(3){
+        right:0;
+        bottom:5px;
+        position: absolute;
+      }
+    }
+  }
+  .search-icon {
+    color: $search-color-form;
+     margin-bottom: -4px;
+  }
+  & > * {
+    margin-left: 20px !important;
+  }
+  
+}
