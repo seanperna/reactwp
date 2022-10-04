@@ -1,11 +1,19 @@
 .menu-promo-wrapper{
   display: flex;
+  
   .menu-promo-btn{
     padding-left: 1rem;
     font-size: small;
     font-weight: bold;
     border-radius: 0;
     min-height: 40px;
+    @media screen and (max-width: $laptop) {
+      padding-left: .5rem;
+      font-size: x-small;
+      font-weight: 100;
+      border-radius: 0;
+      min-height: 25px;
+    }
     .small-text{
       font-weight: 100;
       position: absolute;

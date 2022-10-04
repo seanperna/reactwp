@@ -4,11 +4,19 @@
 
 .menu-stack-header{
 min-height: 40px;
+@media screen and (max-width: $laptop) {
+  min-height: 25px;
+}
+
   .menu-stack-header-item{
     border-radius: 0;
     color: $text-color;
     font-weight: 300;
     padding: 2px 15px;
     font-size: small;
+    @media screen and (max-width: $laptop) {
+      padding: 2px 8px;
+      
+    }
   }
 }
