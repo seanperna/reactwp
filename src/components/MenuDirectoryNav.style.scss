@@ -1,0 +1,63 @@
+
+@import "../styles/variables.scss";
+
+
+.nav-collapse-menu{
+  min-width: $navbar-menu-min-width;
+  position: relative;
+  .nav-header-menu{
+    padding: 0;
+  }
+  .nav-list-group{
+    min-width: $navbar-menu-min-width;
+    position: absolute;
+    .nav-list-group-wrapper{
+      position:relative;
+    }
+  }
+  .nav-list-group-item{
+    position:static;
+    border-top: 1px solid $border-color-light;
+    border-right: 1px solid $border-color-light;
+    border-left: 1px solid $border-color-light;
+  }
+  .nav-list-group-item:last-child{
+    border-bottom: 1px solid $border-color-light;
+  }
+
+  .nav-list-group-item:hover .nav-list-sub{
+    // display:block;
+    visibility: visible;
+    opacity:1;
+  }
+  .nav-list-sub{
+    visibility: hidden;
+    opacity: 0;
+    // positioning
+    box-sizing: border-box;
+    position: absolute; 
+    top:0px; 
+    left: calc($navbar-menu-min-width - 2px) ;
+    // animation
+    -webkit-transition: display .4s ease-in-out,  opacity .5s ease-in-out;
+    -moz-transition: display .4s ease-in-out,  opacity .5s ease-in-out;
+    -o-transition: display .4s ease-in-out,  opacity .5s ease-in-out;
+    transition: display .4s ease-in-out,  opacity .5s ease-in-out;
+    // styling
+    min-width: 250px;
+    padding: 25px;
+    border: 1px solid $border-color-light;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .title{
+      color:blue;
+      font-weight: bold;
+    }
+    .nav-list-sub-item{
+      height: 30px;
+    }
+  }
+}

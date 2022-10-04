@@ -1,0 +1,127 @@
+
+@import "../styles/variables.scss";
+
+// Heading
+
+.logo{
+  max-width: 170px;
+  object-fit: contain;
+  height: auto;
+  margin-top: 6px;
+  @media screen and (max-width: $small) {
+    max-width: 135px;
+  }
+}
+.logo-wrapper-sm {
+  flex-grow: 3;
+}
+
+.header-submenu-wrapper{
+  @media screen and (max-width: $small) {
+    // border-bottom: 1px solid #f0efef;
+    margin-bottom: .16rem;
+    a{
+      margin-right: 2rem;
+      font-weight: 600;
+    }
+    div{
+      font-weight: 600;
+      padding: 2px 0px
+    }
+  }
+}
+.header-wrapper{
+  padding: 1.25rem 0;
+  &.header-wrapper-mobile{
+    padding: 0.25rem 0;
+  }
+  .search-box{
+    border: 1px solid $border-color-form;
+    border-radius: $border-radius-form;
+    position: relative;
+    input{
+      @media (max-width: $small) {
+      padding: $padding-input-y-smallScreen 0;
+      }
+       padding: $padding-input-y 0;
+    }
+    button{
+      position:absolute;
+      padding: 0 $padding-input;
+      right: 0;
+      top: 0;
+      bottom:0;
+      background-color: $search-btn-color-bg;
+      color: $search-btn-color-text;
+      font-weight: $btn-text-weight-bold;
+      border-radius: 0 $border-radius-form $border-radius-form 0;
+      &:hover{
+      opacity: .8;
+      }
+    }
+  }
+  .header-account-icon{
+    div & {
+      position:relative;
+      min-width: 95px;
+    }
+    span{
+      &:nth-child(2){
+        color:#afafaf !important;
+        bottom:25px;
+        position: absolute;
+        font-size: small;
+        width: max-content;
+      }
+      &:nth-child(3){
+        bottom:5px;
+        position: absolute;
+      }
+    }
+  }
+  .header-fav-icon{
+    span{
+      &:nth-child(2){
+        background-color:$badge-header-color;
+        color: $text-color;
+      }
+    }
+  }
+  .header-cart-icon{
+    div & {
+      position:relative;
+      min-width: 95px;
+    }
+    span:nth-child(2){
+      background-color:$badge-header-color;
+      color: $text-color;
+    }
+    div {
+      &:nth-child(2){
+        right:0;
+        color:#afafaf !important;
+        bottom:25px;
+        position: absolute;
+        font-size: small;
+        width: max-content;
+      }
+      &:nth-child(3){
+        right:0;
+        bottom:5px;
+        position: absolute;
+      }
+    }
+  }
+  .search-icon {
+    color: $search-color-form;
+     margin-bottom: -4px;
+  }
+  & > *:not(:first-child) {
+    margin-left: 20px !important;
+  }
+  
+}
+
+.menu-bar-container{
+  border-bottom: 1px solid $border-color-light;
+}

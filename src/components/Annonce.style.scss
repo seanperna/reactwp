@@ -1,0 +1,13 @@
+@import "../styles/variables.scss";
+
+#annouce-bar{
+background-color: $annonce-bg-color;
+@media screen and (max-width: $small) {
+  margin-bottom: 0;
+}
+  // animation variables
+  -webkit-transition: transform .4s ease-out,  max-height .7s ease-out,  opacity .5s ease-out;
+  -moz-transition: transform .4s ease-out,  max-height .7s ease-out,  opacity .5s ease-out;
+  -o-transition: transform .4s ease-out,  max-height .7s ease-out,  opacity .5s ease-out;
+  transition: transform .4s ease-out,  max-height .7s ease-out,  opacity .5s ease-out;
+}

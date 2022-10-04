@@ -1,0 +1,14 @@
+
+@import "../styles/variables.scss";
+
+
+.menu-stack-header{
+min-height: 40px;
+  .menu-stack-header-item{
+    border-radius: 0;
+    color: $text-color;
+    font-weight: 300;
+    padding: 2px 15px;
+    font-size: small;
+  }
+}

@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Annonce from "./components/Annonce";
+import ResponsiveDrawer from "./components/ResponsiveDrawer";
+
+import Homepage from "./pages/homepage/Homepage";
 
 function App() {
   const [menu, setMenu] = useState([
@@ -13,6 +16,7 @@ function App() {
     <>
       <Annonce />
       <Navbar menu={menu} />
+      <Homepage />
     </>
   );
 }
