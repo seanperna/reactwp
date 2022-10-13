@@ -115,7 +115,7 @@ function MenuDirectoryNav(props) {
                     sx={{
                       height: subHeight,
                       width: item.bg ? subWidth : "auto",
-                      backgroundImage: item.bg ? `url("${item.bg}")` : "",
+                      background: item.bg ? `url("${item.bg}")` : "#fff",
                     }}
                   >
                     <Typography

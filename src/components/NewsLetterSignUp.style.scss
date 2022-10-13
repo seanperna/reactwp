@@ -1,0 +1,48 @@
+@import "../styles/variables.scss";
+
+.news-letter-footer {
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  padding: 2.5rem 0;
+  align-items: center;
+  display: flex;
+  .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .subheading {
+    color: #666;
+    span {
+      color: orange;
+      font-weight: bold;
+    }
+  }
+  .search-box {
+    border: 1px solid $border-color-form;
+    border-radius: $border-radius-form;
+    position: relative;
+    background-color: #fff;
+    max-width: 400px;
+    input {
+      @media (max-width: $small) {
+        padding: $padding-input-y-smallScreen 0;
+      }
+      padding: $padding-input-y 0;
+    }
+    button {
+      position: absolute;
+      padding: 0 20px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: $bright-amazon-orange;
+      color: $dark-navy;
+      font-weight: 600;
+      border-radius: 0 6px 6px 0;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

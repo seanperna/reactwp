@@ -63,7 +63,6 @@ function NavMenu({
             orientation="vertical"
             variant="middle"
             flexItem
-            sx={{ display: { xs: "none", sm: "none", md: "block" } }}
           />
         ) : (
           ""
@@ -71,11 +70,7 @@ function NavMenu({
 
         {typeof pages3 !== "undefined"
           ? pages3?.map((page) => (
-              <Button
-                key={page}
-                className="menu-stack-header-item"
-                sx={{ display: { xs: "none", sm: "none", md: "block" } }}
-              >
+              <Button key={page} className="menu-stack-header-item">
                 {page}
               </Button>
             ))

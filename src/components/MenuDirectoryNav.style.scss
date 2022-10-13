@@ -1,48 +1,48 @@
-
 @import "../styles/variables.scss";
 
-
-.nav-collapse-menu{
+.nav-collapse-menu {
   min-width: $navbar-menu-min-width;
   position: relative;
-  .nav-header-menu{
+  .nav-header-menu {
     padding: 0;
   }
-  .nav-list-group{
+  .nav-list-group {
     min-width: $navbar-menu-min-width;
     position: absolute;
-    .nav-list-group-wrapper{
-      position:relative;
+    z-index: 10;
+    .nav-list-group-wrapper {
+      background-color: #fff;
+      position: relative;
     }
   }
-  .nav-list-group-item{
-    position:static;
+  .nav-list-group-item {
+    position: static;
     border-top: 1px solid $border-color-light;
     border-right: 1px solid $border-color-light;
     border-left: 1px solid $border-color-light;
   }
-  .nav-list-group-item:last-child{
+  .nav-list-group-item:last-child {
     border-bottom: 1px solid $border-color-light;
   }
 
-  .nav-list-group-item:hover .nav-list-sub{
+  .nav-list-group-item:hover .nav-list-sub {
     // display:block;
     visibility: visible;
-    opacity:1;
+    opacity: 1;
   }
-  .nav-list-sub{
+  .nav-list-sub {
     visibility: hidden;
     opacity: 0;
     // positioning
     box-sizing: border-box;
-    position: absolute; 
-    top:0px; 
-    left: calc($navbar-menu-min-width - 2px) ;
+    position: absolute;
+    top: 0px;
+    left: calc($navbar-menu-min-width - 2px);
     // animation
-    -webkit-transition: display .4s ease-in-out,  opacity .5s ease-in-out;
-    -moz-transition: display .4s ease-in-out,  opacity .5s ease-in-out;
-    -o-transition: display .4s ease-in-out,  opacity .5s ease-in-out;
-    transition: display .4s ease-in-out,  opacity .5s ease-in-out;
+    -webkit-transition: display 0.4s ease-in-out, opacity 0.5s ease-in-out;
+    -moz-transition: display 0.4s ease-in-out, opacity 0.5s ease-in-out;
+    -o-transition: display 0.4s ease-in-out, opacity 0.5s ease-in-out;
+    transition: display 0.4s ease-in-out, opacity 0.5s ease-in-out;
     // styling
     min-width: 250px;
     padding: 25px;
@@ -51,12 +51,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-
-    .title{
-      color:blue;
+    .title {
+      color: blue;
       font-weight: bold;
     }
-    .nav-list-sub-item{
+    .nav-list-sub-item {
       height: 30px;
     }
   }

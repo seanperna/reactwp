@@ -56,6 +56,10 @@ const StyledMenu = styled((props) => (
   },
 }));
 
+/**
+ * @todo Adding menu wrapper that opens when the button clicks
+ * @returns
+ */
 export default function DropMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -79,8 +83,13 @@ export default function DropMenu() {
           baseClassName="fa-solid"
           className="fa-badge-percent menu-promo-icon"
         />
-        <span className="small-text">Only This Weekend</span>
-        <span sx={{ fontWeight: { sm: "100" } }}>Super Discount</span>
+        <span
+          sx={{ fontSize: { md: "xx-small", lg: "x-small" } }}
+          className="small-text"
+        >
+          Only This Weekend
+        </span>
+        <span>Super Discount</span>
         <Icon
           edge="end"
           sx={{

@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+.home-main-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  .home-main-content {
+    flex: 1;
+    margin-left: 2rem;
+  }
+  .home-sidebar {
+    width: $navbar-menu-min-width;
+    // border-radius: $border-radius-form;
+    .service-item {
+      background-color: #fff;
+      padding: 1rem 1.5rem;
+      // border: 1px solid $border-color-form;
+      border-bottom: 1px solid $border-color-form;
+      border-right: 1px solid $border-color-form;
+      border-left: 1px solid $border-color-form;
+      display: flex;
+      align-items: center;
+      color: #666;
+      &:first-child {
+        border-top: 1px solid $border-color-form;
+      }
+      h6 {
+        font-size: 1rem;
+        margin: 0.6rem 0;
+      }
+      .desc {
+        font-size: 0.96rem;
+        color: rgb(148, 148, 148);
+      }
+      div {
+        padding: 0.2rem 1.5rem;
+      }
+    }
+  }
+}

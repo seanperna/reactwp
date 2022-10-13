@@ -1,3 +1,7 @@
+
+@import "../styles/variables.scss";
+
+
 .menu-promo-wrapper{
   display: flex;
   
@@ -10,7 +14,6 @@
     @media screen and (max-width: $laptop) {
       padding-left: .5rem;
       font-size: x-small;
-      font-weight: 100;
       border-radius: 0;
       min-height: 25px;
     }
@@ -21,6 +24,9 @@
       top: 0;
       left: 34px;
       color: #9f9f9f;
+      @media screen and (max-width: $laptop) {
+        font-size: xx-small;
+      }
     }
     .menu-promo-icon{
       position: absolute;
